@@ -150,7 +150,7 @@ def get_embedding(audio, sr, model=None, input_repr="mel256",
 
     ts = np.arange(embedding.shape[0]) * hop_size
 
-    return embedding, ts
+    return embedding, ts, x
 
 
 def process_file(filepath, output_dir=None, suffix=None, model=None,
